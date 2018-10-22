@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/jixiang",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +23,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/styles/swiper.css",
+              "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/scripts/jquery.min.js",
+              "src/assets/scripts/modernizr.js",
+              "src/assets/scripts/swiper.min.js",
+              "src/assets/scripts/iconfont.js"
+            ]
           },
           "configurations": {
             "production": {

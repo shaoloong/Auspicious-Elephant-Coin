@@ -1,0 +1,239 @@
+<nz-layout>
+  <nz-layout>
+    <div class="app-home-wrapper">
+    <nz-header>
+      <div class="app-container">
+      <div class="home-top">
+        <div class="home-logo"></div>
+        <div class="home-menu">
+          <ul nz-menu [nzMode]="'horizontal'">
+            <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/index">{{'home.home' | translate}}</a></li>
+            <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/client">{{'home.client' | translate}}</a></li>
+            <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/whitepaper">{{'home.whitepaper' | translate}}</a></li>
+            <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/team">{{'home.team' | translate}}</a></li>
+            <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/contact">{{'home.contact' | translate}}</a></li>
+          </ul>
+        </div>
+        <div class="home-i18n"><app-i18n></app-i18n></div>
+      </div>
+      <div class="home-header clearfix">
+        <div class="home-header-text pull-left">
+          <h1 class="leftcome">{{'home.aec' | translate}} <span style="font-size:20px;display: inline-block;height:40px;vertical-align: bottom;">&bull;</span> {{'home.headTitle' | translate}}</h1>
+          <p class="home-header-text-small leftcome">{{'home.headContent' | translate}}</p>
+          <div class="text-center leftcome">
+            <a routerLink="/client" class="home-down-btn">
+              <div style="width:200px;text-align: center">{{'home.goDownload' | translate}}</div>
+            </a>
+          </div>
+        </div>
+        <div class="home-header-photo pull-right rightcome">
+          <img src="/assets/img/img_phone_computer.png" style="width:480px;height:384px;" />
+        </div>
+      </div>
+      </div>
+    </nz-header>
+      <div id="isShowMenu" style="display: none"><app-header-fixed></app-header-fixed></div>
+    <nz-content class="app-container">
+      <section class="home-text-area">
+        <h3 class="title text-center">{{'home.section_1_text_1' | translate}}</h3>
+        <p class="small-title text-center">{{'home.section_1_text_2' | translate}}</p>
+        <div class="cont-block clearfix">
+          <div class="cont-block-flex">
+            <p class="text-center" style="margin-top:64px;"><img src="/assets/img/ic_safety.png" /></p>
+            <p class="middle-font">{{'home.security' | translate}}</p>
+            <p class="middle-font-desc">{{'home.security_text' | translate}}</p>
+          </div>
+          <div class="cont-block-flex">
+            <p class="text-center" style="margin-top:64px;"><img src="/assets/img/ic_convenient.png" /></p>
+            <p class="middle-font">{{'home.convenient' | translate}}</p>
+            <p class="middle-font-desc">{{'home.convenient_text' | translate}}</p>
+          </div>
+          <div class="cont-block-flex">
+            <p class="text-center" style="margin-top:64px;"><img src="/assets/img/ic_service.png" /></p>
+            <p class="middle-font">{{'home.multiService' | translate}}</p>
+            <p class="middle-font-desc">{{'home.multiService_text' | translate}}</p>
+          </div>
+        </div>
+      </section>
+      <section class="home-text-area" style="margin-top:159px">
+        <h3 class="title text-center">{{'home.section_2_text_1' | translate}}</h3>
+        <p class="small-title">{{'home.section_2_text_2' | translate}}</p>
+        <div class="clearfix home-img-text-box" style="margin-top:89px;">
+          <div class="home-img-text">
+            <img src="/assets/img/img_card.png">
+          </div>
+          <div class="home-img-text">
+            <ul>
+              <li class="clearfix">
+                <div class="ic_speed_img"><img src="/assets/img/ic_speed.png"></div>
+                <div class="ic_speed_text">
+                  <p class="ic_speed_text_h">{{'home.section_2_text_3' | translate}}</p>
+                  <p class="ic_speed_text_c">{{'home.section_2_text_4' | translate}}</p>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="ic_speed_img"><img src="/assets/img/ic_exchange.png"></div>
+                <div class="ic_speed_text">
+                  <p class="ic_speed_text_h">{{'home.section_2_text_5' | translate}}</p>
+                  <p class="ic_speed_text_c">{{'home.section_2_text_6' | translate}}</p>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="ic_speed_img"><img src="/assets/img/ic_convert.png"></div>
+                <div class="ic_speed_text">
+                  <p class="ic_speed_text_h">{{'home.section_2_text_7' | translate}}</p>
+                  <p class="ic_speed_text_c">{{'home.section_2_text_8' | translate}}</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix home-img-text-box" style="margin-top:77px;">
+          <div class="home-two-img-text">
+              <ul>
+                <li class="clearfix">
+                  <div class="ic_speed_img"><img src="/assets/img/ic_wallet.png"></div>
+                  <div class="ic_speed_text">
+                    <p class="ic_speed_text_h">{{'home.section_2_text_9' | translate}}</p>
+                    <p class="ic_speed_text_c">{{'home.section_2_text_10' | translate}}</p>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="ic_speed_img"><img src="/assets/img/ic_card.png"></div>
+                  <div class="ic_speed_text">
+                    <p class="ic_speed_text_h">{{'home.section_2_text_11' | translate}}</p>
+                    <p class="ic_speed_text_c">{{'home.section_2_text_12' | translate}}</p>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="ic_speed_img"><img src="/assets/img/ic_package.png"></div>
+                  <div class="ic_speed_text">
+                    <p class="ic_speed_text_h">{{'home.section_2_text_13' | translate}}</p>
+                    <p class="ic_speed_text_c">{{'home.section_2_text_14' | translate}}</p>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="ic_speed_img"><img src="/assets/img/ic_compatibility.png"></div>
+                  <div class="ic_speed_text">
+                    <p class="ic_speed_text_h">{{'home.section_2_text_15' | translate}}</p>
+                    <p class="ic_speed_text_c">{{'home.section_2_text_16' | translate}}</p>
+                  </div>
+                </li>
+              </ul>
+          </div>
+          <div class="home-two-img-photo"><img width="439" src="/assets/img/img_phone.png"></div>
+        </div>
+      </section>
+    </nz-content>
+      <section class="home-text-area" style="margin-top:130px;position:relative">
+        <h3 class="title text-center" style="margin-bottom: 40px;">{{'team.foundingTeam' | translate}}</h3>
+        <div class="swiper-container" style="width:1000px;margin:auto;">
+          <div class="swiper-wrapper" style="width:1000px;margin:auto;">
+            <div class="swiper-slide">
+              <div class="slide-avatar">
+                <svg class="icon" aria-hidden="true" style="width:109px;height: 116px">
+                  <use xlink:href="#icon-touxiang_Tim"></use>
+                </svg>
+              </div>
+              <div class="slide-name">{{'team.ceo' | translate}} &bull; Tim Zhu</div>
+              <div class="slide-content">
+                <div class="left-quotation"></div>
+                <div class="right-quotation"></div>
+                <div class="slide-text">{{'team.ceo_describe' | translate}}</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-avatar">
+                <svg class="icon" aria-hidden="true" style="width:109px;height: 116px">
+                  <use xlink:href="#icon-will"></use>
+                </svg>
+              </div>
+              <div class="slide-name">{{'team.coo' | translate}} &bull; Will Chow</div>
+              <div class="slide-content">
+                <div class="left-quotation"></div>
+                <div class="right-quotation"></div>
+                <div class="slide-text">{{'team.coo_describe' | translate}}</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-avatar">
+                <svg class="icon" aria-hidden="true" style="width:109px;height: 116px">
+                  <use xlink:href="#icon-touxiang_Chase"></use>
+                </svg>
+              </div>
+              <div class="slide-name">{{'team.cpo' | translate}} &bull; Chase Jiang</div>
+              <div class="slide-content">
+                <div class="left-quotation"></div>
+                <div class="right-quotation"></div>
+                <div class="slide-text">{{'team.cpo_describe' | translate}}</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-avatar">
+                <svg class="icon" aria-hidden="true" style="width:109px;height: 116px">
+                  <use xlink:href="#icon-touxiang_Burton"></use>
+                </svg>
+              </div>
+              <div class="slide-name">{{'team.blockChainEngineer' | translate}} &bull; Burton Sun</div>
+              <div class="slide-content">
+                <div class="left-quotation"></div>
+                <div class="right-quotation"></div>
+                <div class="slide-text">{{'team.blockChainEngineer_describe' | translate}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next" style="right:140px"></div>
+        <div class="swiper-button-prev" style="left:140px"></div>
+      </section>
+      <div class="buttom-bg" style="padding-top: 140px;">
+      <section class="home-text-area timeling-wrap">
+        <h3 class="title text-center">{{'home.platformPlanning' | translate}}</h3>
+        <div class="time-line-start">START</div>
+        <section id="cd-timeline" class="cd-container">
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img"><div class="cd-picture"></div></div>
+            <div class="cd-timeline-content">
+              <h2>{{'home.firstStage' | translate}}</h2>
+              <p>&bull; {{'home.firstStage_text_1' | translate}}</p>
+              <p>&bull; {{'home.firstStage_text_2' | translate}}</p>
+              <span class="cd-date">{{'home.firstStage_date' | translate}}</span>
+            </div>
+          </div>
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img"><div class="cd-picture"></div></div>
+            <div class="cd-timeline-content">
+              <h2>{{'home.secondStage' | translate}}</h2>
+              <p>&bull; {{'home.secondStage_text_1' | translate}}</p>
+              <p>&bull; {{'home.secondStage_text_2' | translate}}</p>
+              <p>&bull; {{'home.secondStage_text_3' | translate}}</p>
+              <p>&bull; {{'home.secondStage_text_4' | translate}}</p>
+              <p>&bull; {{'home.secondStage_text_5' | translate}}</p>
+              <span class="cd-date">{{'home.secondStage_date' | translate}}</span>
+            </div>
+          </div>
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img"><div class="cd-picture"></div></div>
+            <div class="cd-timeline-content">
+              <h2>{{'home.thirdStage' | translate}}</h2>
+              <p>{{'home.thirdStage_text_1' | translate}}</p>
+              <span class="cd-date">{{'home.thirdStage_date' | translate}}</span>
+            </div>
+          </div>
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img"><div class="cd-picture"></div></div>
+            <div class="cd-timeline-content">
+              <h2>{{'home.fourthStage' | translate}}</h2>
+              <p>&bull; {{'home.fourthStage_text_1' | translate}}</p>
+              <p>&bull; {{'home.fourthStage_text_2' | translate}}</p>
+              <span class="cd-date">{{'home.fourthStage_date' | translate}}</span>
+            </div>
+          </div>
+        </section>
+        <div class="time-line-start">END</div>
+      </section>
+      </div>
+      <app-footer></app-footer>
+    </div>
+  </nz-layout>
+</nz-layout>
