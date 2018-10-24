@@ -1,13 +1,14 @@
 {
   "home": {
+    "lang":"en",
     "home":"Home Page",
     "client":"Client",
     "whitepaper":"White Paper",
     "team":"Team Introduction",
     "contact":"Contact Us",
-    "aec":"Jixiang Card Package",
+    "aec":"Auspicious Elephant Coin",
     "headTitle":"Link virtual and reality",
-    "headContent":"Jixiang Card Package is a fast, private, safe and convenient solution of cross border remittance and payment for digital currency, and the main service carrier consists of three parts: Jixiang card package, card package APP, digital currency bank card.",
+    "headContent":"Auspicious Elephant Coin is a fast, private, safe and convenient solution of cross border remittance and payment for digital currency, and the main service carrier consists of three parts: Auspicious Elephant Coin, card package APP, digital currency bank card.",
     "goDownload":"Go downloading",
     "section_1_text_1":"Alipay in digital currency",
     "section_1_text_2":"Payment terminal of block chain / Realize cross-border transfer accounts / Real-time arrival / Open the era of digital payment",
@@ -18,7 +19,7 @@
     "multiService":"Multi-service",
     "multiService_text":"Make seamless connection between digital assets and bank cards, global lightning payment network in credit card consumption, quick confirmation of transfer payment and consumption return, and a discount in each consumption.",
     "section_2_text_1":"There is no worries with one card in hand.",
-    "section_2_text_2":"Jixiang Card Package provides the opening function of bank debit card in the Card Package APP by cooperating with card issuer in order to link digital currency with the real world, and support users to apply for activing physical or virtual cards, recharge with digital currency to make transactions and consumption in real word.",
+    "section_2_text_2":"Auspicious Elephant Coin provides the opening function of bank debit card in the Card Package APP by cooperating with card issuer in order to link digital currency with the real world, and support users to apply for activing physical or virtual cards, recharge with digital currency to make transactions and consumption in real word.",
     "section_2_text_3":"Activate card on seconds",
     "section_2_text_4":"Apply Jixiang card online, which can be sent to the user in 2-3 weeks.",
     "section_2_text_5":"Real-time exchanging",
@@ -42,7 +43,7 @@
     "firstStage_text_2":"Issue Jixiang currency card package token, start ICO",
     "firstStage_date":"The third quarter of 2018",
     "secondStage_text_1":"On-line exchange of Jixiang currency；",
-    "secondStage_text_2":"Complete the development and on-line of Jixiang card package APP 1.0",
+    "secondStage_text_2":"Complete the development and on-line of Auspicious Elephant Coin APP 1.0",
     "secondStage_text_3":"Support the management of mainstream token such as BTC, ETH and USDT.",
     "secondStage_text_4":"Realize no-risk secured transactions;",
     "secondStage_text_5":"Support the convenient sale of digital currency in APP.",
@@ -51,10 +52,13 @@
     "thirdStage_date":"The first quarter of 2019",
     "fourthStage_text_1":"Optimize the service of currency conversion and transaction, and improve the use flow and scope of digital currency bank card. ",
     "fourthStage_text_2":"Cooperate with banks financial institutions to provide users with a variety of innovative services and realize the platforms to connect bank, payment system and people.",
-    "fourthStage_date":"The second quarter of 2019 and later"
+    "fourthStage_date":"The second quarter of 2019 and later",
+    "imgPhoneComputer":"/assets/img/img_phone_computer_en.png",
+    "imgCard":"/assets/img/img_card_en.png",
+    "imgPhone":"/assets/img/img_phone_en.png"
   },
   "team": {
-    "title":"Protect and escort Jixiang Card Package with professionalism, concentration and whole-heart",
+    "title":"Professional, focused and whole-hearted for auspicious elephant card",
     "foundingTeam": "Founding team",
     "ceo": "CEO",
     "ceo_describe": "Over 25 years of experience in working and investing in finance, technology, education and hig-tech industry, holding executive positions in several US and Singapore companies. His wealth of experience and successful track records in the financial sector has equipped him with expertise and skills in sales, technology, risk and organizational management. ",
@@ -66,8 +70,9 @@
     "blockChainEngineer_describe": "He has 2 years of foreign enterprise experience, three years of Internet finance industry is mainly engaged in the design and development of P2P core code, development and design of financial system and operation system, In 2 years of development of block-chain technology, developed version 1.0 of the jingtong wallet, and based on the design of jingtong public chain, HNA's B2B wallet (to guarantee the combination of wallet and HNA's existing supply chain) and B2C wallet (to guarantee the payment connection between wallet and HNA's internal stores) were developed."
   },
   "client":{
-    "ios":"IOS Enterprise Edition Download",
-    "android":"Android Version Download"
+    "ios":"iOS Download",
+    "android":"Android Download",
+    "tip":"Scan QR code to download the App"
   },
   "contact":{
     "title":"We are at your side",

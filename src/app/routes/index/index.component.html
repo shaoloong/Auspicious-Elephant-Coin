@@ -4,7 +4,11 @@
     <nz-header>
       <div class="app-container">
       <div class="home-top">
-        <div class="home-logo"></div>
+        <div class="home-logo">
+          <svg class="icon" aria-hidden="true" style="width:86px;height:66px;">
+            <use xlink:href="#icon-jixianglogo1"></use>
+          </svg>
+        </div>
         <div class="home-menu">
           <ul nz-menu [nzMode]="'horizontal'">
             <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/index">{{'home.home' | translate}}</a></li>
@@ -14,7 +18,7 @@
             <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/contact">{{'home.contact' | translate}}</a></li>
           </ul>
         </div>
-        <div class="home-i18n"><app-i18n></app-i18n></div>
+        <div class="home-i18n"><app-i18n (outer)="runParent($event)"></app-i18n></div>
       </div>
       <div class="home-header clearfix">
         <div class="home-header-text pull-left">
@@ -27,7 +31,7 @@
           </div>
         </div>
         <div class="home-header-photo pull-right rightcome">
-          <img src="/assets/img/img_phone_computer.png" style="width:480px;height:384px;" />
+          <img [attr.src]="imgPhoneComputer" style="width:480px;height:384px;" />
         </div>
       </div>
       </div>
@@ -39,17 +43,29 @@
         <p class="small-title text-center">{{'home.section_1_text_2' | translate}}</p>
         <div class="cont-block clearfix">
           <div class="cont-block-flex">
-            <p class="text-center" style="margin-top:64px;"><img src="/assets/img/ic_safety.png" /></p>
+            <p class="text-center" style="margin-top:64px;">
+              <svg class="icon" aria-hidden="true" style="width:63px;height: 69px">
+                <use xlink:href="#icon-anquan"></use>
+              </svg>
+            </p>
             <p class="middle-font">{{'home.security' | translate}}</p>
             <p class="middle-font-desc">{{'home.security_text' | translate}}</p>
           </div>
           <div class="cont-block-flex">
-            <p class="text-center" style="margin-top:64px;"><img src="/assets/img/ic_convenient.png" /></p>
+            <p class="text-center" style="margin-top:64px;">
+              <svg class="icon" aria-hidden="true" style="width:63px;height: 69px">
+                <use xlink:href="#icon-bianjie"></use>
+              </svg>
+            </p>
             <p class="middle-font">{{'home.convenient' | translate}}</p>
             <p class="middle-font-desc">{{'home.convenient_text' | translate}}</p>
           </div>
           <div class="cont-block-flex">
-            <p class="text-center" style="margin-top:64px;"><img src="/assets/img/ic_service.png" /></p>
+            <p class="text-center" style="margin-top:64px;">
+              <svg class="icon" aria-hidden="true" style="width:63px;height: 69px">
+                <use xlink:href="#icon-duofuwu"></use>
+              </svg>
+            </p>
             <p class="middle-font">{{'home.multiService' | translate}}</p>
             <p class="middle-font-desc">{{'home.multiService_text' | translate}}</p>
           </div>
@@ -60,26 +76,38 @@
         <p class="small-title">{{'home.section_2_text_2' | translate}}</p>
         <div class="clearfix home-img-text-box" style="margin-top:89px;">
           <div class="home-img-text">
-            <img src="/assets/img/img_card.png">
+            <img [attr.src]="imgCard">
           </div>
           <div class="home-img-text">
             <ul>
               <li class="clearfix">
-                <div class="ic_speed_img"><img src="/assets/img/ic_speed.png"></div>
+                <div class="ic_speed_img">
+                  <svg class="icon" aria-hidden="true" style="width:39px;height:35px">
+                    <use xlink:href="#icon-miaosukaiqia"></use>
+                  </svg>
+                </div>
                 <div class="ic_speed_text">
                   <p class="ic_speed_text_h">{{'home.section_2_text_3' | translate}}</p>
                   <p class="ic_speed_text_c">{{'home.section_2_text_4' | translate}}</p>
                 </div>
               </li>
               <li class="clearfix">
-                <div class="ic_speed_img"><img src="/assets/img/ic_exchange.png"></div>
+                <div class="ic_speed_img">
+                  <svg class="icon" aria-hidden="true" style="width:39px;height:35px">
+                    <use xlink:href="#icon-shishihuanhui"></use>
+                  </svg>
+                </div>
                 <div class="ic_speed_text">
                   <p class="ic_speed_text_h">{{'home.section_2_text_5' | translate}}</p>
                   <p class="ic_speed_text_c">{{'home.section_2_text_6' | translate}}</p>
                 </div>
               </li>
               <li class="clearfix">
-                <div class="ic_speed_img"><img src="/assets/img/ic_convert.png"></div>
+                <div class="ic_speed_img">
+                  <svg class="icon" aria-hidden="true" style="width:39px;height:35px">
+                    <use xlink:href="#icon-suishisuidisuibiduihuan"></use>
+                  </svg>
+                </div>
                 <div class="ic_speed_text">
                   <p class="ic_speed_text_h">{{'home.section_2_text_7' | translate}}</p>
                   <p class="ic_speed_text_c">{{'home.section_2_text_8' | translate}}</p>
@@ -92,28 +120,44 @@
           <div class="home-two-img-text">
               <ul>
                 <li class="clearfix">
-                  <div class="ic_speed_img"><img src="/assets/img/ic_wallet.png"></div>
+                  <div class="ic_speed_img">
+                    <svg class="icon" aria-hidden="true" style="width:39px;height:35px">
+                      <use xlink:href="#icon-yingjianqianbaojishu"></use>
+                    </svg>
+                  </div>
                   <div class="ic_speed_text">
                     <p class="ic_speed_text_h">{{'home.section_2_text_9' | translate}}</p>
                     <p class="ic_speed_text_c">{{'home.section_2_text_10' | translate}}</p>
                   </div>
                 </li>
                 <li class="clearfix">
-                  <div class="ic_speed_img"><img src="/assets/img/ic_card.png"></div>
+                  <div class="ic_speed_img">
+                    <svg class="icon" aria-hidden="true" style="width:39px;height:35px">
+                      <use xlink:href="#icon-qukuaiyinhangqia"></use>
+                    </svg>
+                  </div>
                   <div class="ic_speed_text">
                     <p class="ic_speed_text_h">{{'home.section_2_text_11' | translate}}</p>
                     <p class="ic_speed_text_c">{{'home.section_2_text_12' | translate}}</p>
                   </div>
                 </li>
                 <li class="clearfix">
-                  <div class="ic_speed_img"><img src="/assets/img/ic_package.png"></div>
+                  <div class="ic_speed_img">
+                    <svg class="icon" aria-hidden="true" style="width:39px;height:35px">
+                      <use xlink:href="#icon-yiqiayibao"></use>
+                    </svg>
+                  </div>
                   <div class="ic_speed_text">
                     <p class="ic_speed_text_h">{{'home.section_2_text_13' | translate}}</p>
                     <p class="ic_speed_text_c">{{'home.section_2_text_14' | translate}}</p>
                   </div>
                 </li>
                 <li class="clearfix">
-                  <div class="ic_speed_img"><img src="/assets/img/ic_compatibility.png"></div>
+                  <div class="ic_speed_img">
+                    <svg class="icon" aria-hidden="true" style="width:39px;height:35px">
+                      <use xlink:href="#icon-jiqiangdejianrongxing"></use>
+                    </svg>
+                  </div>
                   <div class="ic_speed_text">
                     <p class="ic_speed_text_h">{{'home.section_2_text_15' | translate}}</p>
                     <p class="ic_speed_text_c">{{'home.section_2_text_16' | translate}}</p>
@@ -121,7 +165,7 @@
                 </li>
               </ul>
           </div>
-          <div class="home-two-img-photo"><img width="439" src="/assets/img/img_phone.png"></div>
+          <div class="home-two-img-photo"><img width="439" [attr.src]="imgPhone"></div>
         </div>
       </section>
     </nz-content>

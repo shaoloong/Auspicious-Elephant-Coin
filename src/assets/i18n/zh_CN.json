@@ -1,5 +1,6 @@
 {
   "home": {
+    "lang":"zh",
     "home":"首页",
     "client":"客户端",
     "whitepaper":"白皮书",
@@ -51,7 +52,10 @@
     "thirdStage_date":"2019年第一季度",
     "fourthStage_text_1":"优化货币转换和交易的服务，完善数字货币银行卡的使用流程及范围；",
     "fourthStage_text_2":"探索和银行金融机构合作，为用户提供多样化的创新服务，实现连接银行，支付系统和人员的平台。",
-    "fourthStage_date":"2019年第二季度及以后"
+    "fourthStage_date":"2019年第二季度及以后",
+    "imgPhoneComputer":"/assets/img/img_phone_computer_zh.png",
+    "imgCard":"/assets/img/img_card_zh.png",
+    "imgPhone":"/assets/img/img_phone_zh.png"
   },
   "team": {
     "title":"专业、专注、专心，为吉象卡包保驾护航",
@@ -67,7 +71,8 @@
   },
   "client":{
     "ios":"iOS企业版下载",
-    "android":"Android版下载"
+    "android":"Android版下载",
+    "tip":"鼠标移至对应的按钮上，扫描对应二维码下载"
   },
   "contact":{
     "title":"我们就在你的身边",

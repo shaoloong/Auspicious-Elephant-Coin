@@ -1,7 +1,11 @@
 <nz-header>
   <div class="app-container">
     <div class="home-top">
-      <div class="home-logo"></div>
+      <div class="home-logo">
+        <svg class="icon" aria-hidden="true" style="width:86px;height:66px;">
+          <use xlink:href="#icon-jixianglogo"></use>
+        </svg>
+      </div>
       <div class="home-menu">
         <ul nz-menu [nzMode]="'horizontal'">
           <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/index">{{'home.home' | translate}}</a></li>
@@ -11,7 +15,7 @@
           <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/contact">{{'home.contact' | translate}}</a></li>
         </ul>
       </div>
-      <div class="home-i18n"><app-i18n></app-i18n></div>
+      <!--<div class="home-i18n"><app-i18n></app-i18n></div>-->
     </div>
   </div>
 </nz-header>

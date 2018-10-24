@@ -15,7 +15,7 @@
           <li nz-menu-item [routerLinkActive]="'ant-menu-item-selected'"><a routerLink="/contact">{{'home.contact' | translate}}</a></li>
         </ul>
       </div>
-      <div class="home-i18n"><app-i18n></app-i18n></div>
+      <div class="home-i18n"><app-i18n (outer)="runParent($event)"></app-i18n></div>
     </div>
   </div>
 </nz-header>

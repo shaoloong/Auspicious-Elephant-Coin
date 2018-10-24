@@ -1,12 +1,19 @@
 <div class="client-wrap">
-  <div class="app-container">
+  <div class="app-container" style="position: relative">
+    <div style="width:150px;height:60px;line-height:60px;background: #fff;position: absolute;right:0;top:-75px;"><app-i18n (outer)="runParent($event)"></app-i18n></div>
     <div class="client-box">
       <div class="client-desc">
         <h1>{{'home.aec' | translate}} <span style="font-size:20px;display: inline-block;height:40px;vertical-align: bottom;">&bull;</span> {{'home.headTitle' | translate}}</h1>
         <p>{{'home.headContent' | translate}}</p>
         <div class="client-button">
-          <button nz-popover [nzContent]="iosTemplate" class="client-ios"><img src="/assets/img/ic_apple.png"> {{'client.ios' | translate}}</button>
-          <button nz-popover [nzContent]="androidTemplate" class="client-android"><img src="/assets/img/ic_android.png"> {{'client.android' | translate}}</button>
+          <button nz-popover [nzContent]="iosTemplate" class="client-ios">
+            <svg class="icon" aria-hidden="true" style="width:18px;height:22px;vertical-align: bottom;">
+              <use xlink:href="#icon-pingguo"></use>
+            </svg> {{'client.ios' | translate}}</button>
+          <button nz-popover [nzContent]="androidTemplate" class="client-android">
+            <svg class="icon" aria-hidden="true" style="width:18px;height:22px;vertical-align: bottom;">
+              <use xlink:href="#icon-anzhuo1"></use>
+            </svg> {{'client.android' | translate}}</button>
           <ng-template #iosTemplate>
             <!--<img style="width:150px" src="/assets/img/qr_ios.png">-->
             正在开发中，敬请期待
@@ -16,10 +23,10 @@
             正在开发中，敬请期待
           </ng-template>
         </div>
-        <div class="client-tip">*鼠标移至对应的按钮上，扫描对应二维码下载</div>
+        <div class="client-tip">*{{'client.tip' | translate}}</div>
       </div>
       <div class="client-img">
-        <img src="/assets/img/ic_two_iphones.png">
+        <img [attr.src]="icTwoIphones">
       </div>
     </div>
   </div>

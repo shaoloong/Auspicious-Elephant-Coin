@@ -1,5 +1,5 @@
 <img style="vertical-align: middle;margin-right:6px;" [src]="langIcon" /><nz-select class="chose-lang" style="width:90px;" nzTheme='light' [nzSize]="'small'" [(ngModel)]="selectedValue" (ngModelChange)="selectLangLog($event)" nzPlaceHolder="{{'system.language' | translate}}">
+  <nz-option nzCustomContent nzLabel="ภาษาไทย" nzValue="th_TH"><img src="/assets/img/ic_Thailand.png" /> ภาษาไทย</nz-option>
   <nz-option nzCustomContent nzLabel="简体中文" nzValue="zh_CN"><img src="/assets/img/ic_china.png" /> 简体中文</nz-option>
   <nz-option nzCustomContent nzLabel="English" nzValue="en_US"><img src="/assets/img/ic_English.png" /> English</nz-option>
-  <nz-option nzCustomContent nzLabel="ภาษาไทย" nzValue="th_TH"><img src="/assets/img/ic_Thailand.png" /> ภาษาไทย</nz-option>
 </nz-select>
